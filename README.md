@@ -1,6 +1,6 @@
 <h1>H1Z1 Multi Fix</h1>
 <br/>
-<a href="">
+<a href="https://github.com/Inforcer25/h1z1-multi-fix/raw/master/H1Z1%20Multi%20Fix.exe">
   <img src="http://i.imgur.com/qoGP19r.png" alt="Download">
 </a>
 
