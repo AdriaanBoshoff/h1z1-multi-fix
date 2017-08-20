@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2017/07/05 19:30:44.474,=C:\Users\adria\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2017/07/05 19:31:32.871,C:\Users\adria\Documents\Embarcadero\Studio\Projects\H1Z1 Fix\Unit1.pas=C:\Users\adria\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2017/07/05 19:31:32.871,C:\Users\adria\Documents\Embarcadero\Studio\Projects\H1Z1 Fix\Unit1.dfm=C:\Users\adria\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2017/07/05 19:31:33.435,C:\Users\adria\Documents\Embarcadero\Studio\Projects\H1Z1 Fix\Project1.dproj=C:\Users\adria\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+	<Transactions>
+    <Transaction>2017/07/05 19:30:44.000.474,=C:\Users\adria\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/07/05 19:31:32.000.871,C:\Users\adria\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\adria\Documents\Embarcadero\Studio\Projects\H1Z1 Fix\Unit1.pas</Transaction>
+    <Transaction>2017/07/05 19:31:32.000.871,C:\Users\adria\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\adria\Documents\Embarcadero\Studio\Projects\H1Z1 Fix\Unit1.dfm</Transaction>
+    <Transaction>2017/07/05 19:31:33.000.435,C:\Users\adria\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\adria\Documents\Embarcadero\Studio\Projects\H1Z1 Fix\Project1.dproj</Transaction>
   </Transactions>
 </BorlandProject>

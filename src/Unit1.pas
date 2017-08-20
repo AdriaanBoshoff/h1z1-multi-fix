@@ -21,7 +21,6 @@ type
     btn6: TButton;
     procedure btn4Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
-    procedure DelFilesFromDir(Directory, FileMask: string; DelSubDirs: Boolean);
     procedure OpenURL(url: string);
     procedure RunApplication(FilePath: string);
     procedure btn5Click(Sender: TObject);
@@ -29,6 +28,7 @@ type
     procedure btn1Click(Sender: TObject);
     procedure btn2Click(Sender: TObject);
     procedure btn3Click(Sender: TObject);
+    procedure DeleteDirectory(const Name: string);
   private
     { Private declarations }
   public
@@ -45,7 +45,7 @@ implementation
 
 procedure TForm1.btn1Click(Sender: TObject);
 begin
-  DelFilesFromDir(filedir, '*.*', True);
+  DeleteDirectory(filedir);
 end;
 
 procedure TForm1.btn2Click(Sender: TObject);
@@ -74,7 +74,7 @@ begin
     ShowMessage('Select a Game to start')
   else
     begin
-      DelFilesFromDir(filedir, '*.*', True);
+      DeleteDirectory(filedir);
 
       if rg1.ItemIndex = 0 then
         RunApplication('steam://rungameid/295110');
@@ -105,21 +105,26 @@ begin
   OpenURL('https://www.youtube.com/Inforcer25');
 end;
 
-procedure TForm1.DelFilesFromDir(Directory, FileMask: string;
-  DelSubDirs: Boolean);
+procedure TForm1.DeleteDirectory(const Name: string);
 var
-  SourceLst: string;
-  FOS: TSHFileOpStruct;
+  F: TSearchRec;
 begin
-  FillChar(FOS, SizeOf(FOS), 0);
-  FOS.Wnd := Application.MainForm.Handle;
-  FOS.wFunc := FO_DELETE;
-  SourceLst := Directory + '\' + FileMask + #0;
-  FOS.pFrom := PChar(SourceLst);
-  if not DelSubDirs then
-    FOS.fFlags := FOS.fFlags OR FOF_FILESONLY;
-  FOS.fFlags := FOS.fFlags OR FOF_NOCONFIRMATION;
-  SHFileOperation(FOS);
+  if FindFirst(Name + '\*', faAnyFile, F) = 0 then begin
+    try
+      repeat
+        if (F.Attr and faDirectory <> 0) then begin
+          if (F.Name <> '.') and (F.Name <> '..') then begin
+            DeleteDirectory(Name + '\' + F.Name);
+          end;
+        end else begin
+          DeleteFile(Name + '\' + F.Name);
+        end;
+      until FindNext(F) <> 0;
+    finally
+      FindClose(F);
+    end;
+    RemoveDir(Name);
+  end;
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
