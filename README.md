@@ -3,7 +3,7 @@ Please note that I have no idea why some antivirus is picking it up. All it does
 <br/>
 Virus scan: https://www.virustotal.com/#/file/137e0d6352dfd3db648c34339e599c3461fd096e19d9c49fd7be466b16886a9f/detection
 <br/>
-<a href="https://github.com/AdriaanBoshoff/releases">
+<a href="https://github.com/AdriaanBoshoff/h1z1-multi-fix/releases/">
   <img src="http://i.imgur.com/qoGP19r.png" alt="Download">
 </a>
 
