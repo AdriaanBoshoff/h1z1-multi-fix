@@ -16,10 +16,8 @@ type
     btn1: TButton;
     btn2: TButton;
     btn3: TButton;
-    btn4: TButton;
     btn5: TButton;
     btn6: TButton;
-    procedure btn4Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure OpenURL(url: string);
     procedure RunApplication(FilePath: string);
@@ -90,19 +88,14 @@ begin
     end;
 end;
 
-procedure TForm1.btn4Click(Sender: TObject);
-begin
-  Close;
-end;
-
 procedure TForm1.btn5Click(Sender: TObject);
 begin
-  OpenURL('https://github.com/Inforcer25/h1z1-multi-fix');
+  OpenURL('https://github.com/AdriaanBoshoff/h1z1-multi-fix');
 end;
 
 procedure TForm1.btn6Click(Sender: TObject);
 begin
-  OpenURL('https://www.youtube.com/Inforcer25');
+  OpenURL('https://www.youtube.com/https://www.youtube.com/channel/UCcTPklJvT-3u0e7K6HBKYvw?view_as=subscriber');
 end;
 
 procedure TForm1.DeleteDirectory(const Name: string);

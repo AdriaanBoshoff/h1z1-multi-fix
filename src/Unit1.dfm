@@ -43496,9 +43496,9 @@ object Form1: TForm1
   object lbl2: TLabel
     Left = 8
     Top = 401
-    Width = 138
+    Width = 130
     Height = 19
-    Caption = 'Made by Inforcer25'
+    Caption = 'Made by Quantum'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clRed
     Font.Height = -16
@@ -43513,11 +43513,17 @@ object Form1: TForm1
     Width = 281
     Height = 185
     Caption = 'Games'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
     Items.Strings = (
       'H1Z1: Just Survive'
       'H1Z1: Just Survive Test Server'
       'H1Z1: King of the kill'
       'H1Z1: King of the kill Test Server')
+    ParentFont = False
     TabOrder = 0
   end
   object btn1: TButton
@@ -43547,22 +43553,13 @@ object Form1: TForm1
     TabOrder = 3
     OnClick = btn3Click
   end
-  object btn4: TButton
-    Left = 518
-    Top = 8
-    Width = 105
-    Height = 49
-    Caption = 'Close'
-    TabOrder = 4
-    OnClick = btn4Click
-  end
   object btn5: TButton
     Left = 8
     Top = 48
     Width = 121
     Height = 41
     Caption = 'GitHub Page'
-    TabOrder = 5
+    TabOrder = 4
     OnClick = btn5Click
   end
   object btn6: TButton
@@ -43571,7 +43568,7 @@ object Form1: TForm1
     Width = 121
     Height = 41
     Caption = 'YouTube'
-    TabOrder = 6
+    TabOrder = 5
     OnClick = btn6Click
   end
 end
